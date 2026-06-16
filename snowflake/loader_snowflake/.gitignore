@@ -1,0 +1,12 @@
+*.txt*
+*.doc*
+*.pdf*
+*.log*
+raw/**
+curated/**
+analytics/**
+log/**
+metastore_db/
+.pytest_cache/**
+src/__pycache__/**
+tests/__pycache__/**
