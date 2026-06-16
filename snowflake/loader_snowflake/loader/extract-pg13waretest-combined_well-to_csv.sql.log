@@ -1,0 +1,38 @@
+20220222_103610.459838326, START extract schema: /home/postgres/work/snowflake/extract_schema_data_to_csv.sh
+timing
+Timing is on.
+COPY (SELECT * FROM combined_well.business_associate) TO '/pg/s3nfs/pg13-ware-test/loader/combined_well.business_associate.csv' DELIMITER ',' CSV;
+COPY 1076609
+Time: 3584.221 ms (00:03.584)
+COPY (SELECT * FROM combined_well.data_currency) TO '/pg/s3nfs/pg13-ware-test/loader/combined_well.data_currency.csv' DELIMITER ',' CSV;
+COPY 40
+Time: 13.723 ms
+COPY (SELECT * FROM combined_well.field) TO '/pg/s3nfs/pg13-ware-test/loader/combined_well.field.csv' DELIMITER ',' CSV;
+COPY 107080
+Time: 254.008 ms
+COPY (SELECT * FROM combined_well.pool) TO '/pg/s3nfs/pg13-ware-test/loader/combined_well.pool.csv' DELIMITER ',' CSV;
+COPY 267362
+Time: 1111.102 ms (00:01.111)
+COPY (SELECT * FROM combined_well.r_country) TO '/pg/s3nfs/pg13-ware-test/loader/combined_well.r_country.csv' DELIMITER ',' CSV;
+COPY 250
+Time: 15.480 ms
+COPY (SELECT * FROM combined_well.r_province_state) TO '/pg/s3nfs/pg13-ware-test/loader/combined_well.r_province_state.csv' DELIMITER ',' CSV;
+COPY 4893
+Time: 30.960 ms
+COPY (SELECT * FROM combined_well.r_well_status) TO '/pg/s3nfs/pg13-ware-test/loader/combined_well.r_well_status.csv' DELIMITER ',' CSV;
+COPY 2117
+Time: 21.989 ms
+COPY (SELECT * FROM combined_well.strat_unit) TO '/pg/s3nfs/pg13-ware-test/loader/combined_well.strat_unit.csv' DELIMITER ',' CSV;
+COPY 13364
+Time: 89.485 ms
+COPY (SELECT * FROM combined_well.well) TO '/pg/s3nfs/pg13-ware-test/loader/combined_well.well.csv' DELIMITER ',' CSV;
+COPY 3421008
+Time: 43055.332 ms (00:43.055)
+COPY combined_well.pden_production_month TO '/pg/s3nfs/pg13-ware-test/loader/combined_well.pden_production_month.csv' DELIMITER ',' CSV;
+COPY 468596190
+Time: 1714410.447 ms (28:34.410)
+COPY combined_well.pden_summary TO '/pg/s3nfs/pg13-ware-test/loader/combined_well.pden_summary.csv' DELIMITER ',' CSV;
+COPY 2798993
+Time: 42244.765 ms (00:42.245)
+20220222_110615.411419869, END extract schema: /home/postgres/work/snowflake/extract_schema_data_to_csv.sh
+20220222_113340.973135858, END split csv files to 100M chunks: /home/postgres/work/snowflake/extract_schema_data_to_csv.sh

@@ -1,0 +1,11 @@
+PUT file:///pg/s3nfs/pg13-ware-test/loader/combined_well.business_associate.csv.* @PG13WARETEST_STAGE;
+PUT file:///pg/s3nfs/pg13-ware-test/loader/combined_well.data_currency.csv.* @PG13WARETEST_STAGE;
+PUT file:///pg/s3nfs/pg13-ware-test/loader/combined_well.field.csv.* @PG13WARETEST_STAGE;
+PUT file:///pg/s3nfs/pg13-ware-test/loader/combined_well.pden_production_month.csv.* @PG13WARETEST_STAGE;
+PUT file:///pg/s3nfs/pg13-ware-test/loader/combined_well.pden_summary.csv.* @PG13WARETEST_STAGE;
+PUT file:///pg/s3nfs/pg13-ware-test/loader/combined_well.pool.csv.* @PG13WARETEST_STAGE;
+PUT file:///pg/s3nfs/pg13-ware-test/loader/combined_well.r_country.csv.* @PG13WARETEST_STAGE;
+PUT file:///pg/s3nfs/pg13-ware-test/loader/combined_well.r_province_state.csv.* @PG13WARETEST_STAGE;
+PUT file:///pg/s3nfs/pg13-ware-test/loader/combined_well.r_well_status.csv.* @PG13WARETEST_STAGE;
+PUT file:///pg/s3nfs/pg13-ware-test/loader/combined_well.strat_unit.csv.* @PG13WARETEST_STAGE;
+PUT file:///pg/s3nfs/pg13-ware-test/loader/combined_well.well.csv.* @PG13WARETEST_STAGE;

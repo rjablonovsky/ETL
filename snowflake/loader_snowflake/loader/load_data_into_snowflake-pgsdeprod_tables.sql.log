@@ -1,0 +1,160 @@
+20220304_142720.661566542, START load data into snowflake: /home/postgres/work/snowflake/load_data_into_snowflake.sh
+20220304_142720.666255095, END load data using snowsql -c "${SFDB}" -s "${SFSCHEMA}" -f "${SQLFILE}" -o timing=true >> "${LOG}" 2>&1: /home/postgres/work/snowflake/load_data_into_snowflake.sh
+20220304_142720.668626900, END load data using snowsql -c "${SFDB}" -s "${SFSCHEMA}" -f "${SQLFILE}" -o timing=true >> "${LOG}" 2>&1: /home/postgres/work/snowflake/load_data_into_snowflake.sh
+20220304_142720.670899229, END load data using snowsql -c "${SFDB}" -s "${SFSCHEMA}" -f "${SQLFILE}" -o timing=true >> "${LOG}" 2>&1: /home/postgres/work/snowflake/load_data_into_snowflake.sh
+20220304_142720.673087688, END load data using snowsql -c "${SFDB}" -s "${SFSCHEMA}" -f "${SQLFILE}" -o timing=true >> "${LOG}" 2>&1: /home/postgres/work/snowflake/load_data_into_snowflake.sh
+20220304_142720.675712145, END load data using snowsql -c "${SFDB}" -s "${SFSCHEMA}" -f "${SQLFILE}" -o timing=true >> "${LOG}" 2>&1: /home/postgres/work/snowflake/load_data_into_snowflake.sh
+20220304_142720.677584601, END load data into snowflake: /home/postgres/work/snowflake/load_data_into_snowflake.sh
+20220304_142937.966494846, START load data into snowflake: /home/postgres/work/snowflake/load_data_into_snowflake.sh
+* SnowSQL * v1.2.21
+Type SQL statements or !help
++--------------------------------------------------------------------+---------+
+| name                                                               | result  |
+|--------------------------------------------------------------------+---------|
+| pg13waretest_stage/pgsdeprod_prod_wld.glj_wld_well_bh.csv.aaaaa.gz | removed |
+| pg13waretest_stage/pgsdeprod_prod_wld.glj_wld_well_bh.csv.aaaab.gz | removed |
+| pg13waretest_stage/pgsdeprod_prod_wld.glj_wld_well_bh.csv.aaaac.gz | removed |
+| pg13waretest_stage/pgsdeprod_prod_wld.glj_wld_well_bh.csv.aaaah.gz | removed |
+| pg13waretest_stage/pgsdeprod_prod_wld.glj_wld_well_bh.csv.aaaaf.gz | removed |
+| pg13waretest_stage/pgsdeprod_prod_wld.glj_wld_well_bh.csv.aaaag.gz | removed |
+| pg13waretest_stage/pgsdeprod_prod_wld.glj_wld_well_bh.csv.aaaae.gz | removed |
+| pg13waretest_stage/pgsdeprod_prod_wld.glj_wld_well_bh.csv.aaaad.gz | removed |
++--------------------------------------------------------------------+---------+
+8 Row(s) produced. Time Elapsed: 0.300s
++--------------------------------------------------------------------------+---------+
+| name                                                                     | result  |
+|--------------------------------------------------------------------------+---------|
+| pg13waretest_stage/pgsdeprod_prod_can.glj_well_dir_srvy_loc.csv.aaaaf.gz | removed |
+| pg13waretest_stage/pgsdeprod_prod_can.glj_well_dir_srvy_loc.csv.aaaag.gz | removed |
+| pg13waretest_stage/pgsdeprod_prod_can.glj_well_dir_srvy_loc.csv.aaaae.gz | removed |
+| pg13waretest_stage/pgsdeprod_prod_can.glj_well_dir_srvy_loc.csv.aaaad.gz | removed |
+| pg13waretest_stage/pgsdeprod_prod_can.glj_well_dir_srvy_loc.csv.aaaaa.gz | removed |
+| pg13waretest_stage/pgsdeprod_prod_can.glj_well_dir_srvy_loc.csv.aaaab.gz | removed |
+| pg13waretest_stage/pgsdeprod_prod_can.glj_well_dir_srvy_loc.csv.aaaac.gz | removed |
+| pg13waretest_stage/pgsdeprod_prod_can.glj_well_dir_srvy_loc.csv.aaaai.gz | removed |
+| pg13waretest_stage/pgsdeprod_prod_can.glj_well_dir_srvy_loc.csv.aaaah.gz | removed |
+| pg13waretest_stage/pgsdeprod_prod_can.glj_well_dir_srvy_loc.csv.aaaaj.gz | removed |
++--------------------------------------------------------------------------+---------+
+10 Row(s) produced. Time Elapsed: 0.380s
++-----------------------------------------------------------------------------+---------+
+| name                                                                        | result  |
+|-----------------------------------------------------------------------------+---------|
+| pg13waretest_stage/pgsdeprod_prod_can.geobase_aboriginal_lands.csv.aaaaa.gz | removed |
+| pg13waretest_stage/pgsdeprod_prod_can.geobase_aboriginal_lands.csv.aaaab.gz | removed |
++-----------------------------------------------------------------------------+---------+
+2 Row(s) produced. Time Elapsed: 0.172s
+Goodbye!
+20220304_142941.894165136, END load data using snowsql -c "${SFDB}" -s "${SFSCHEMA}" -f "${SQLFILE}" -o timing=true >> "${LOG}" 2>&1: /home/postgres/work/snowflake/load_data_into_snowflake.sh
+* SnowSQL * v1.2.21
+Type SQL statements or !help
++----------------------------------------------+-------------------------------------------------+-------------+-------------+--------------------+--------------------+----------+---------+
+| source                                       | target                                          | source_size | target_size | source_compression | target_compression | status   | message |
+|----------------------------------------------+-------------------------------------------------+-------------+-------------+--------------------+--------------------+----------+---------|
+| pgsdeprod_prod_wld.glj_wld_well_bh.csv.aaaaa | pgsdeprod_prod_wld.glj_wld_well_bh.csv.aaaaa.gz |   104857570 |    21814016 | NONE               | GZIP               | UPLOADED |         |
+| pgsdeprod_prod_wld.glj_wld_well_bh.csv.aaaab | pgsdeprod_prod_wld.glj_wld_well_bh.csv.aaaab.gz |   104857498 |    27952592 | NONE               | GZIP               | UPLOADED |         |
+| pgsdeprod_prod_wld.glj_wld_well_bh.csv.aaaac | pgsdeprod_prod_wld.glj_wld_well_bh.csv.aaaac.gz |   104857494 |    33993376 | NONE               | GZIP               | UPLOADED |         |
+| pgsdeprod_prod_wld.glj_wld_well_bh.csv.aaaad | pgsdeprod_prod_wld.glj_wld_well_bh.csv.aaaad.gz |   104857556 |    34023488 | NONE               | GZIP               | UPLOADED |         |
+| pgsdeprod_prod_wld.glj_wld_well_bh.csv.aaaae | pgsdeprod_prod_wld.glj_wld_well_bh.csv.aaaae.gz |   104857541 |    34261104 | NONE               | GZIP               | UPLOADED |         |
+| pgsdeprod_prod_wld.glj_wld_well_bh.csv.aaaaf | pgsdeprod_prod_wld.glj_wld_well_bh.csv.aaaaf.gz |   104857486 |    34249856 | NONE               | GZIP               | UPLOADED |         |
+| pgsdeprod_prod_wld.glj_wld_well_bh.csv.aaaag | pgsdeprod_prod_wld.glj_wld_well_bh.csv.aaaag.gz |   104857555 |    34241072 | NONE               | GZIP               | UPLOADED |         |
+| pgsdeprod_prod_wld.glj_wld_well_bh.csv.aaaah | pgsdeprod_prod_wld.glj_wld_well_bh.csv.aaaah.gz |    11469705 |     3587504 | NONE               | GZIP               | UPLOADED |         |
++----------------------------------------------+-------------------------------------------------+-------------+-------------+--------------------+--------------------+----------+---------+
+8 Row(s) produced. Time Elapsed: 29.277s
++----------------------------------------------------+-------------------------------------------------------+-------------+-------------+--------------------+--------------------+----------+---------+
+| source                                             | target                                                | source_size | target_size | source_compression | target_compression | status   | message |
+|----------------------------------------------------+-------------------------------------------------------+-------------+-------------+--------------------+--------------------+----------+---------|
+| pgsdeprod_prod_can.glj_well_dir_srvy_loc.csv.aaaaa | pgsdeprod_prod_can.glj_well_dir_srvy_loc.csv.aaaaa.gz |   104857386 |    33841376 | NONE               | GZIP               | UPLOADED |         |
+| pgsdeprod_prod_can.glj_well_dir_srvy_loc.csv.aaaab | pgsdeprod_prod_can.glj_well_dir_srvy_loc.csv.aaaab.gz |   104857517 |    33820544 | NONE               | GZIP               | UPLOADED |         |
+| pgsdeprod_prod_can.glj_well_dir_srvy_loc.csv.aaaac | pgsdeprod_prod_can.glj_well_dir_srvy_loc.csv.aaaac.gz |   104857404 |    33840736 | NONE               | GZIP               | UPLOADED |         |
+| pgsdeprod_prod_can.glj_well_dir_srvy_loc.csv.aaaad | pgsdeprod_prod_can.glj_well_dir_srvy_loc.csv.aaaad.gz |   104857175 |    33836880 | NONE               | GZIP               | UPLOADED |         |
+| pgsdeprod_prod_can.glj_well_dir_srvy_loc.csv.aaaae | pgsdeprod_prod_can.glj_well_dir_srvy_loc.csv.aaaae.gz |   104857457 |    33815776 | NONE               | GZIP               | UPLOADED |         |
+| pgsdeprod_prod_can.glj_well_dir_srvy_loc.csv.aaaaf | pgsdeprod_prod_can.glj_well_dir_srvy_loc.csv.aaaaf.gz |   104857034 |    33831616 | NONE               | GZIP               | UPLOADED |         |
+| pgsdeprod_prod_can.glj_well_dir_srvy_loc.csv.aaaag | pgsdeprod_prod_can.glj_well_dir_srvy_loc.csv.aaaag.gz |   104857372 |    33819968 | NONE               | GZIP               | UPLOADED |         |
+| pgsdeprod_prod_can.glj_well_dir_srvy_loc.csv.aaaah | pgsdeprod_prod_can.glj_well_dir_srvy_loc.csv.aaaah.gz |   104856658 |    33842240 | NONE               | GZIP               | UPLOADED |         |
+| pgsdeprod_prod_can.glj_well_dir_srvy_loc.csv.aaaai | pgsdeprod_prod_can.glj_well_dir_srvy_loc.csv.aaaai.gz |   104857484 |    33815152 | NONE               | GZIP               | UPLOADED |         |
+| pgsdeprod_prod_can.glj_well_dir_srvy_loc.csv.aaaaj | pgsdeprod_prod_can.glj_well_dir_srvy_loc.csv.aaaaj.gz |    73792717 |    23818896 | NONE               | GZIP               | UPLOADED |         |
++----------------------------------------------------+-------------------------------------------------------+-------------+-------------+--------------------+--------------------+----------+---------+
+10 Row(s) produced. Time Elapsed: 61.740s
++-------------------------------------------------------+----------------------------------------------------------+-------------+-------------+--------------------+--------------------+----------+---------+
+| source                                                | target                                                   | source_size | target_size | source_compression | target_compression | status   | message |
+|-------------------------------------------------------+----------------------------------------------------------+-------------+-------------+--------------------+--------------------+----------+---------|
+| pgsdeprod_prod_can.geobase_aboriginal_lands.csv.aaaaa | pgsdeprod_prod_can.geobase_aboriginal_lands.csv.aaaaa.gz |   104093979 |    32833184 | NONE               | GZIP               | UPLOADED |         |
+| pgsdeprod_prod_can.geobase_aboriginal_lands.csv.aaaab | pgsdeprod_prod_can.geobase_aboriginal_lands.csv.aaaab.gz |     4758099 |     1452832 | NONE               | GZIP               | UPLOADED |         |
++-------------------------------------------------------+----------------------------------------------------------+-------------+-------------+--------------------+--------------------+----------+---------+
+2 Row(s) produced. Time Elapsed: 31.076s
+Goodbye!
+20220304_143146.466644249, END load data using snowsql -c "${SFDB}" -s "${SFSCHEMA}" -f "${SQLFILE}" -o timing=true >> "${LOG}" 2>&1: /home/postgres/work/snowflake/load_data_into_snowflake.sh
+* SnowSQL * v1.2.21
+Type SQL statements or !help
++----------------------------------+
+| status                           |
+|----------------------------------|
+| Statement executed successfully. |
++----------------------------------+
+1 Row(s) produced. Time Elapsed: 0.391s
++----------------------------------+
+| status                           |
+|----------------------------------|
+| Statement executed successfully. |
++----------------------------------+
+1 Row(s) produced. Time Elapsed: 0.818s
++----------------------------------+
+| status                           |
+|----------------------------------|
+| Statement executed successfully. |
++----------------------------------+
+1 Row(s) produced. Time Elapsed: 0.305s
+Goodbye!
+20220304_143151.676216184, END load data using snowsql -c "${SFDB}" -s "${SFSCHEMA}" -f "${SQLFILE}" -o timing=true >> "${LOG}" 2>&1: /home/postgres/work/snowflake/load_data_into_snowflake.sh
+* SnowSQL * v1.2.21
+Type SQL statements or !help
++--------------------------------------------------------------------+--------+-------------+-------------+-------------+-------------+-------------+------------------+-----------------------+-------------------------+
+| file                                                               | status | rows_parsed | rows_loaded | error_limit | errors_seen | first_error | first_error_line | first_error_character | first_error_column_name |
+|--------------------------------------------------------------------+--------+-------------+-------------+-------------+-------------+-------------+------------------+-----------------------+-------------------------|
+| pg13waretest_stage/pgsdeprod_prod_wld.glj_wld_well_bh.csv.aaaah.gz | LOADED |       93346 |       93346 |       93346 |           0 | NULL        |             NULL |                  NULL | NULL                    |
+| pg13waretest_stage/pgsdeprod_prod_wld.glj_wld_well_bh.csv.aaaaa.gz | LOADED |      772288 |      772288 |      772288 |           0 | NULL        |             NULL |                  NULL | NULL                    |
+| pg13waretest_stage/pgsdeprod_prod_wld.glj_wld_well_bh.csv.aaaab.gz | LOADED |      828088 |      828088 |      828088 |           0 | NULL        |             NULL |                  NULL | NULL                    |
+| pg13waretest_stage/pgsdeprod_prod_wld.glj_wld_well_bh.csv.aaaaf.gz | LOADED |      856450 |      856450 |      856450 |           0 | NULL        |             NULL |                  NULL | NULL                    |
+| pg13waretest_stage/pgsdeprod_prod_wld.glj_wld_well_bh.csv.aaaad.gz | LOADED |      855616 |      855616 |      855616 |           0 | NULL        |             NULL |                  NULL | NULL                    |
+| pg13waretest_stage/pgsdeprod_prod_wld.glj_wld_well_bh.csv.aaaac.gz | LOADED |      859800 |      859800 |      859800 |           0 | NULL        |             NULL |                  NULL | NULL                    |
+| pg13waretest_stage/pgsdeprod_prod_wld.glj_wld_well_bh.csv.aaaae.gz | LOADED |      856534 |      856534 |      856534 |           0 | NULL        |             NULL |                  NULL | NULL                    |
+| pg13waretest_stage/pgsdeprod_prod_wld.glj_wld_well_bh.csv.aaaag.gz | LOADED |      856489 |      856489 |      856489 |           0 | NULL        |             NULL |                  NULL | NULL                    |
++--------------------------------------------------------------------+--------+-------------+-------------+-------------+-------------+-------------+------------------+-----------------------+-------------------------+
+8 Row(s) produced. Time Elapsed: 30.294s
++--------------------------------------------------------------------------+--------+-------------+-------------+-------------+-------------+-------------+------------------+-----------------------+-------------------------+
+| file                                                                     | status | rows_parsed | rows_loaded | error_limit | errors_seen | first_error | first_error_line | first_error_character | first_error_column_name |
+|--------------------------------------------------------------------------+--------+-------------+-------------+-------------+-------------+-------------+------------------+-----------------------+-------------------------|
+| pg13waretest_stage/pgsdeprod_prod_can.glj_well_dir_srvy_loc.csv.aaaaf.gz | LOADED |       86404 |       86404 |       86404 |           0 | NULL        |             NULL |                  NULL | NULL                    |
+| pg13waretest_stage/pgsdeprod_prod_can.glj_well_dir_srvy_loc.csv.aaaah.gz | LOADED |       85675 |       85675 |       85675 |           0 | NULL        |             NULL |                  NULL | NULL                    |
+| pg13waretest_stage/pgsdeprod_prod_can.glj_well_dir_srvy_loc.csv.aaaad.gz | LOADED |       86441 |       86441 |       86441 |           0 | NULL        |             NULL |                  NULL | NULL                    |
+| pg13waretest_stage/pgsdeprod_prod_can.glj_well_dir_srvy_loc.csv.aaaag.gz | LOADED |       86048 |       86048 |       86048 |           0 | NULL        |             NULL |                  NULL | NULL                    |
+| pg13waretest_stage/pgsdeprod_prod_can.glj_well_dir_srvy_loc.csv.aaaab.gz | LOADED |       87159 |       87159 |       87159 |           0 | NULL        |             NULL |                  NULL | NULL                    |
+| pg13waretest_stage/pgsdeprod_prod_can.glj_well_dir_srvy_loc.csv.aaaaa.gz | LOADED |       86196 |       86196 |       86196 |           0 | NULL        |             NULL |                  NULL | NULL                    |
+| pg13waretest_stage/pgsdeprod_prod_can.glj_well_dir_srvy_loc.csv.aaaac.gz | LOADED |       86262 |       86262 |       86262 |           0 | NULL        |             NULL |                  NULL | NULL                    |
+| pg13waretest_stage/pgsdeprod_prod_can.glj_well_dir_srvy_loc.csv.aaaaj.gz | LOADED |       61144 |       61144 |       61144 |           0 | NULL        |             NULL |                  NULL | NULL                    |
+| pg13waretest_stage/pgsdeprod_prod_can.glj_well_dir_srvy_loc.csv.aaaae.gz | LOADED |       86251 |       86251 |       86251 |           0 | NULL        |             NULL |                  NULL | NULL                    |
+| pg13waretest_stage/pgsdeprod_prod_can.glj_well_dir_srvy_loc.csv.aaaai.gz | LOADED |       86126 |       86126 |       86126 |           0 | NULL        |             NULL |                  NULL | NULL                    |
++--------------------------------------------------------------------------+--------+-------------+-------------+-------------+-------------+-------------+------------------+-----------------------+-------------------------+
+10 Row(s) produced. Time Elapsed: 52.509s
++-----------------------------------------------------------------------------+------------------+-------------+-------------+-------------+-------------+----------------------------------------------------------------------------------------------------------------------------+------------------+-----------------------+----------------------------------------+
+| file                                                                        | status           | rows_parsed | rows_loaded | error_limit | errors_seen | first_error                                                                                                                | first_error_line | first_error_character | first_error_column_name                |
+|-----------------------------------------------------------------------------+------------------+-------------+-------------+-------------+-------------+----------------------------------------------------------------------------------------------------------------------------+------------------+-----------------------+----------------------------------------|
+| pg13waretest_stage/pgsdeprod_prod_can.geobase_aboriginal_lands.csv.aaaab.gz | LOADED           |          20 |          20 |          20 |           0 | NULL                                                                                                                       |             NULL |                  NULL | NULL                                   |
+| pg13waretest_stage/pgsdeprod_prod_can.geobase_aboriginal_lands.csv.aaaaa.gz | PARTIALLY_LOADED |        3282 |        3281 |        3282 |           1 | GEOGRAPHY too large: {"coordinates":[[[[-126.3345503,67.0414893],[-126.3348286,67.0417],[-126.334764,67.0418706],[-126.502 |             3100 |                     0 | "GEOBASE_ABORIGINAL_LANDS"["SHAPE":23] |
++-----------------------------------------------------------------------------+------------------+-------------+-------------+-------------+-------------+----------------------------------------------------------------------------------------------------------------------------+------------------+-----------------------+----------------------------------------+
+2 Row(s) produced. Time Elapsed: 45.116s
+Goodbye!
+20220304_143402.756201121, END load data using snowsql -c "${SFDB}" -s "${SFSCHEMA}" -f "${SQLFILE}" -o timing=true >> "${LOG}" 2>&1: /home/postgres/work/snowflake/load_data_into_snowflake.sh
+* SnowSQL * v1.2.21
+Type SQL statements or !help
++-----------+------------------------------------+
+| ROW_COUNT | TABLE_NAME                         |
+|-----------+------------------------------------|
+|      3301 | PGSDEPROD.GEOBASE_ABORIGINAL_LANDS |
+|    837706 | PGSDEPROD.GLJ_WELL_DIR_SRVY_LOC    |
+|   5978611 | PGSDEPROD.GLJ_WLD_WELL_BH          |
++-----------+------------------------------------+
+3 Row(s) produced. Time Elapsed: 0.394s
+Goodbye!
+20220304_143406.243986363, END load data using snowsql -c "${SFDB}" -s "${SFSCHEMA}" -f "${SQLFILE}" -o timing=true >> "${LOG}" 2>&1: /home/postgres/work/snowflake/load_data_into_snowflake.sh
+20220304_143406.246453526, END load data into snowflake: /home/postgres/work/snowflake/load_data_into_snowflake.sh

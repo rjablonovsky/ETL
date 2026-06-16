@@ -1,0 +1,11 @@
+REMOVE @PG13WARETEST_STAGE/combined_well.business_associate.csv;
+REMOVE @PG13WARETEST_STAGE/combined_well.data_currency.csv;
+REMOVE @PG13WARETEST_STAGE/combined_well.field.csv;
+REMOVE @PG13WARETEST_STAGE/combined_well.pden_production_month.csv;
+REMOVE @PG13WARETEST_STAGE/combined_well.pden_summary.csv;
+REMOVE @PG13WARETEST_STAGE/combined_well.pool.csv;
+REMOVE @PG13WARETEST_STAGE/combined_well.r_country.csv;
+REMOVE @PG13WARETEST_STAGE/combined_well.r_province_state.csv;
+REMOVE @PG13WARETEST_STAGE/combined_well.r_well_status.csv;
+REMOVE @PG13WARETEST_STAGE/combined_well.strat_unit.csv;
+REMOVE @PG13WARETEST_STAGE/combined_well.well.csv;

@@ -1,0 +1,32 @@
+-- helfull snowflake commands:
+-- https://docs.snowflake.com/en/sql-reference/functions/get_ddl.html
+select get_ddl('schema', 'EDW');
+-- get table ddl:
+select get_dll('view', 'production.disposition_production_zone');
+-- option 2 get metadata from information_schema:
+select * FROM information_schema.COLUMNS WHERE table_name ILIKE 'disposition_production_zone' ORDER BY ORDINAL_POSITION ;
+
+-- generate PostgreSQL JDBC FDW tables from snowflake information schema:
+SELECT  'DROP FOREIGN TABLE IF EXISTS ' || TABLE_SCHEMA || '.' || TABLE_NAME || ';' || CHAR(10) ||
+		'CREATE FOREIGN TABLE ' || TABLE_SCHEMA || '.' || TABLE_NAME || '(' || 
+		listagg(
+		CHAR(10) || '  ' || COLUMN_NAME || ' ' || 
+        CASE (DATA_TYPE)
+             WHEN 'TEXT' THEN 
+               CASE WHEN CHARACTER_MAXIMUM_LENGTH < 10485760 THEN 'VARCHAR('|| CHARACTER_MAXIMUM_LENGTH ||')' 
+                    ELSE 'TEXT' 
+               END
+             WHEN 'NUMBER' THEN 'NUMERIC('|| NUMERIC_PRECISION  ||')'
+             WHEN 'TIMESTAMP_NTZ' THEN 'TIMESTAMP(3)'
+             WHEN 'DATE' THEN 'DATE'
+             WHEN 'GEOGRAPHY' THEN 'TEXT'
+             ELSE 'TEXT'
+        END
+        , ',') within group (ORDER BY ORDINAL_POSITION) || 
+        CHAR(10) || ') SERVER snowflake_ihsdata OPTIONS (table ''' || TABLE_SCHEMA || '.' || TABLE_NAME ||''');' ||
+        CHAR(10)
+        AS sql_foreign_table
+FROM information_schema.COLUMNS 
+WHERE TABLE_SCHEMA ILIKE 'production' 
+GROUP BY TABLE_SCHEMA , TABLE_NAME 
+ORDER BY TABLE_SCHEMA , TABLE_NAME;

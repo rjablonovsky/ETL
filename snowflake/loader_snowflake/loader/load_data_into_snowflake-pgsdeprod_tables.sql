@@ -1,0 +1,5 @@
+remove_from_snowflake_internal_stage-pgsdeprod_tables-csv_files.sql
+load_into_snowflake_internal_stage-pgsdeprod_tables-csv_files.sql
+truncate-pgsdeprod_tables.sql
+copy_into-pgsdeprod_tables-from_snowflake_internal_stage_csv_files.sql
+test_snowflake-pgsdeprod_tables-row_count_per_table.sql

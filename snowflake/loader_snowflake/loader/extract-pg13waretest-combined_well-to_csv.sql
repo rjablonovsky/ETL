@@ -1,0 +1,11 @@
+COPY (SELECT * FROM combined_well.business_associate) TO '/pg/s3nfs/pg13-ware-test/loader/combined_well.business_associate.csv' DELIMITER ',' CSV;
+COPY (SELECT * FROM combined_well.data_currency) TO '/pg/s3nfs/pg13-ware-test/loader/combined_well.data_currency.csv' DELIMITER ',' CSV;
+--COPY (SELECT * FROM combined_well.field) TO '/pg/s3nfs/pg13-ware-test/loader/combined_well.field.csv' DELIMITER ',' CSV;
+--COPY (SELECT * FROM combined_well.pool) TO '/pg/s3nfs/pg13-ware-test/loader/combined_well.pool.csv' DELIMITER ',' CSV;
+--COPY (SELECT * FROM combined_well.r_country) TO '/pg/s3nfs/pg13-ware-test/loader/combined_well.r_country.csv' DELIMITER ',' CSV;
+--COPY (SELECT * FROM combined_well.r_province_state) TO '/pg/s3nfs/pg13-ware-test/loader/combined_well.r_province_state.csv' DELIMITER ',' CSV;
+--COPY (SELECT * FROM combined_well.r_well_status) TO '/pg/s3nfs/pg13-ware-test/loader/combined_well.r_well_status.csv' DELIMITER ',' CSV;
+--COPY (SELECT * FROM combined_well.strat_unit) TO '/pg/s3nfs/pg13-ware-test/loader/combined_well.strat_unit.csv' DELIMITER ',' CSV;
+--COPY (SELECT * FROM combined_well.well) TO '/pg/s3nfs/pg13-ware-test/loader/combined_well.well.csv' DELIMITER ',' CSV;
+--COPY combined_well.pden_production_month TO '/pg/s3nfs/pg13-ware-test/loader/combined_well.pden_production_month.csv' DELIMITER ',' CSV;
+--COPY combined_well.pden_summary TO '/pg/s3nfs/pg13-ware-test/loader/combined_well.pden_summary.csv' DELIMITER ',' CSV;
